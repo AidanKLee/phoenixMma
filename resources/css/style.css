@@ -525,7 +525,7 @@ a {
 #classes {
 
     text-align: center;
-    padding: 32px 0;
+    padding: 48px 0;
     overflow: hidden;
     transition: background-color 1s;
 
@@ -590,6 +590,75 @@ a {
 
 }
 
+
+/* Instructors Section */
+
+#instructors {
+
+    text-align: center;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 32px 0;
+
+}
+
+#instructorsWrapper {
+
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#instructorsWrapper figure {
+
+    flex: 1 1 25%;
+    margin-top: 8px;
+
+}
+
+#instructorsWrapper figcaption {
+
+    padding: 8px;
+
+}
+
+#instructorsWrapper img {
+
+    width: 100%;
+    padding: 1%;
+
+}
+
+#instructors h2 {
+
+    padding: 8px;
+    color: #1f1f1f;
+
+}
+
+#instructors h5 {
+
+    color: #b10000;
+    padding: 32px;
+
+}
+
+#instructors h6 {
+
+    color: #1f1f1f;
+
+}
+
+#instructors p {
+
+    padding-top: 8px;
+    color: #1f1f1f;
+    /* font-style: italic; */
+
+}
 
 /* Universal Class Styles */
 
@@ -679,6 +748,18 @@ a {
 
         flex: 1 1 42%;
         max-width: 272px;
+    
+    }
+
+    #instructorsWrapper {
+
+        flex-wrap: wrap;
+    
+    }
+
+    #instructorsWrapper figure {
+
+        flex: 1 1 50%;
     
     }
 
