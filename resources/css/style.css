@@ -641,7 +641,7 @@ a {
 
 #instructors h5 {
 
-    color: #b10000;
+    color: #1F1F1F;
     padding: 32px;
 
 }
@@ -656,7 +656,101 @@ a {
 
     padding-top: 8px;
     color: #1f1f1f;
-    /* font-style: italic; */
+
+}
+
+
+/* Contact Section */
+
+#contact {
+
+    width: 100%;
+
+}
+
+#contactWrapper {
+
+    width: 100%;
+    padding: 256px 0 0 0;
+    background-image: URL(../images/ring2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#contactArticle {
+
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    background-color: rgba(241, 241, 241, .9);
+    transition: background-color 1s;
+
+}
+
+#contactArticle:hover {
+
+    background-color: rgba(241, 241, 241, 1);
+
+}
+
+#contactHeader {
+
+    padding: 16px 0;
+
+}
+
+#contactMapDetails {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#contactDetails {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contactHours {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contactMap {
+
+    padding-top: 32px;
+    width: 100%;
+
+}
+
+#contact h2, #contact h6, #contact p {
+
+    color: #1f1f1f;
+    font-style: italic;
+
+}
+
+
+footer {
+
+    padding: 12px;
 
 }
 
@@ -672,6 +766,12 @@ a {
 .italic {
 
     font-style: italic;
+
+}
+
+.smallPrint {
+
+    font-size: .8rem;
 
 }
 
@@ -761,6 +861,18 @@ a {
 
         flex: 1 1 50%;
     
+    }
+    #contactDetails {
+
+        width: 100%;
+        padding-bottom: 32px;
+    
+    }
+    
+    #contactHours {
+    
+        width: 100%;
+
     }
 
 }
