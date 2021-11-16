@@ -192,6 +192,7 @@ a {
 
 #menuIcon {
 
+    padding: 0 4px;
     display: none !important;
 
 }
@@ -314,10 +315,15 @@ a {
 
 #aboutHeaderBrands img {
 
-    max-width: 145px;
-    width: 14%;
-    min-width: 76px;
-    padding: 16px 0 0 0;
+    height: 80px;
+    padding: 12px;
+    transition: transform .5s;
+
+}
+
+#aboutHeaderBrands img:hover {
+
+    transform: scale(1.2);
 
 }
 
@@ -362,6 +368,176 @@ a {
 }
 
 
+/* Membership Section */
+
+#membership {
+
+    width: 100%;
+    margin: 16px 0;
+    text-align: center;
+
+}
+
+#membershipArticle {
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 16px auto;
+    background-image: url(../images/grapple1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#membershipHeader {
+
+    background-color: rgba(31, 31, 31, .6);
+    padding: 16px 0;
+    position: relative;
+    top: 32px;
+
+}
+
+#membershipHeader h3 {
+
+    letter-spacing: 4px;
+    font-weight: lighter;
+
+}
+
+#membershipHeader h6 {
+
+    letter-spacing: 8px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+
+}
+
+#membershipPrices {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 64px;
+
+}
+
+.membershipPricesCards {
+
+    margin: 32px 16px 0 16px;
+    padding: 32px;
+    max-width: 100%;
+    min-width: 250px;
+    flex: 1 1;
+    background-color: rgba(241, 241, 241, .95);
+    color: #1f1f1f;
+    transition: background-color .2s, box-shadow 2s;
+
+}
+
+.membershipPricesCards:hover {
+
+    background-color: rgba(241, 241, 241, 1);
+
+}
+
+.membershipPricesCards h1 {
+
+    letter-spacing: 4px;
+    font-weight: lighter;
+    color: #1f1f1f;
+
+}
+
+.membershipPricesCards h5{
+
+    width: fit-content;
+    margin: 0 auto;
+    transition: transform 1s;
+
+}
+
+.membershipPricesCards:hover h5{
+
+    transform: scale(1.8);
+
+}
+
+#membershipPricesUltimate:hover {
+
+    box-shadow: 0 -5px 10px 10px #b10000;
+
+}
+
+.membershipPricesCards h5 {
+
+    color: #1f1f1f;
+    margin-bottom: 32px;
+    font-style: italic;
+
+}
+
+.membershipPricesCards p {
+
+    font-weight: lighter;
+    padding: 16px 0 0 0;
+    height: 135px;
+
+}
+
+.membershipPricesCards .button1 {
+
+    margin: 32px auto 0 auto;
+
+}
+
+.membershipPricesCards .button1:hover {
+
+    background-color: #1f1f1f;
+    color: #b10000;
+    border: 2px solid #b10000;
+
+}
+
+.membershipPricesCards .button1 p {
+
+    padding: 0;
+    height: auto;
+
+}
+
+#membershipExtras {
+
+    background-color: rgba(177, 0, 0, .7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#membershipExtras div {
+
+    flex: 1 1 310px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+
+/* Classes Section */
+
+#classes {
+
+
+
+}
+
+
 /* Universal Class Styles */
 
 .reverseColours {
@@ -397,6 +573,12 @@ a {
 
     }
 
+    #membershipPrices {
+
+        flex-wrap: wrap;
+    
+    }
+
 }
 
 @media only screen and (max-width: 870px) {
@@ -421,6 +603,11 @@ a {
 
         font-size: 12px;
 
+    }
+    #membershipPrices {
+
+        margin-top: 32px;
+    
     }
 
 }
