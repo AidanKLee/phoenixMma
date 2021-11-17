@@ -71,7 +71,7 @@ a {
 #header {
 
     width: 100%;
-    background-color: #1f1f1f;
+    background-color: rgba(31, 31, 31, .95);
     position: fixed;
     top: 0;
     max-height: 64px;
@@ -121,6 +121,13 @@ a {
 
     display: inline;
     color: #b10000;
+
+}
+
+.black {
+
+    display: inline;
+    color: #1f1f1f;
 
 }
 
@@ -184,6 +191,106 @@ a {
     display: none !important;
 
 }
+
+
+/* Menu */
+
+#menu {
+
+    position: fixed;
+    z-index: 120;
+    background-color: rgba(31, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    display: none;
+
+}
+
+#menuNav {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #1f0000;
+    
+}
+
+#menuNavHeader {
+
+    height: 64px;
+    display: flex;
+    align-items: center;
+
+}
+
+#menuNavCloseBtn {
+
+    filter: invert(99%) sepia(6%) saturate(36%) hue-rotate(313deg) brightness(117%) contrast(89%);
+    padding: 16px;
+
+}
+
+#menuNavCloseBtn:hover {
+
+    filter: invert(13%) sepia(88%) saturate(4492%) hue-rotate(356deg) brightness(75%) contrast(115%);
+
+}
+
+#menuNavList {
+
+    list-style: none;
+    width: 100%;
+
+}
+
+#menuNavList li {
+
+    width: 100%;
+
+}
+
+#menuNavList a {
+
+    display: block;
+    width: 100%;
+    padding: 32px;
+    font-style: italic;
+    font-size: 1.2rem;
+    transition: .5s;
+
+}
+
+#menuNavList a:hover {
+
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+    background-color: #240000;
+    color: #b10000;
+    font-weight: bold;
+
+}
+
+#menuImg {
+
+    width: 100%;
+    padding: 32px;
+
+}
+
+#menuNavFooter {
+
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* Intro Section */
 
 #intro {
 
@@ -253,7 +360,7 @@ a {
     border: 2px solid #b10000;
     border-radius: 50px;
     width: fit-content;
-    margin: 0 auto;
+    margin: 8px auto;
     transition: border .5s, transform .3s;
 
 }
@@ -683,6 +790,7 @@ a {
 #contactArticle {
 
     margin: 0 auto;
+    padding: 0 0 16px 0;
     text-align: center;
     width: 100%;
     max-width: 1440px;
@@ -734,9 +842,10 @@ a {
 
 #contactMap {
 
-    padding-top: 32px;
     width: 100%;
+    max-width: 1440px;
     height: 50vh;
+    margin: 0 auto;
 
 }
 
@@ -747,6 +856,78 @@ a {
 
 }
 
+form {
+
+    width: 100%;
+    /* max-width: 768px; */
+    margin: 32px auto 0 auto;
+
+}
+
+input {
+
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: 46.8%;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#subject {
+
+    width: 95%;
+
+}
+
+#message {
+
+    width: 95%;
+    height: 128px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 8px;
+    resize: none;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#agree {
+
+    width: fit-content;
+    display: inline-block;
+    margin: 0 8px;
+    text-align: left;
+
+}
+
+#agreeText {
+
+    width: fit-content;
+    display: inline-block;
+    text-align: left;
+
+}
+
+#submit {
+
+    display: block;
+    width: 160px;
+
+}
+
+#submit:hover {
+
+    background-color: #f1f1f1;
+    color: #b10000;
+    border: 2px solid #b10000;
+
+}
+
+
+
+/* Footer */
 
 footer {
 
@@ -813,6 +994,13 @@ footer {
 
 @media only screen and (max-width: 870px) {
 
+
+    #headerLogoText {
+
+        display: flex !important;
+
+    }
+
     #headerNavList {
 
         display: none;
@@ -840,6 +1028,13 @@ footer {
         font-size: 12px;
 
     }
+
+    #headerLogoText {
+
+        display: none !important;
+
+    }
+
     #membershipPrices {
 
         margin-top: 32px;
@@ -876,5 +1071,95 @@ footer {
         width: 100%;
 
     }
+
+    input {
+
+        width: 95%;
+    
+    }
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.fadeIn {
+
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes fadeOut {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+.fadeOut {
+
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes menuIn {
+
+    from {
+        right: -100%
+    }
+
+    to {
+        right: 0;
+    }
+
+}
+
+.menuIn {
+
+    animation-name: menuIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes menuOut {
+
+    from {
+        right: 0
+    }
+
+    to {
+        right: -100%;
+    }
+
+}
+
+.menuOut {
+
+    animation-name: menuOut;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 
 }

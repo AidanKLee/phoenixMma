@@ -92,16 +92,89 @@
                         <img src="resources/images/icons/youtubebg.svg" alt="YouTube">
                     </a>
 
-                    <a>
-                        <img  id="menuIcon" src="resources/images/icons/menu.svg" alt="Menu Toggle">
+                    <a id="menuBtn">
+                        <img id="menuIcon" src="resources/images/icons/menu.svg" alt="Menu Toggle">
                     </a>
 
                 </div>
 
             </div>
 
-
         </header>
+
+        <div id="menu">
+
+            <nav id="menuNav">
+
+                <div>
+
+                    <div id="menuNavHeader">
+
+                        <img id="menuNavCloseBtn" src="resources/images/icons/close.svg" alt="Close Menu Button">
+                    
+                    </div>
+                    
+        
+                    <ul id="menuNavList">
+    
+                        <li>
+                            <a href="#about">
+                                ABOUT US
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#membership">
+                                MEMBERSHIP
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#classes">
+                                CLASSES
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#instructors">
+                                INSTRUCTORS
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#contact">
+                                CONTACT
+                            </a>
+                        </li>
+    
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <img id="menuImg" src="resources/images/phoenixLogo.png" alt="Phoenix Logo">
+
+                    <div id="menuNavFooter">
+
+                        <a href="#intro">
+                            <p class="smallPrint">
+                                Return To Top
+                            </p>
+                        </a>
+                        <p class="smallPrint">
+                            &copy Copyright 2021 - Phoenix MMA
+                        </p>
+    
+                    </div>
+
+                </div>
+    
+            </nav>
+
+            
+
+        </div>
 
         <main>
 
@@ -620,6 +693,8 @@
         
                         </div>
 
+                        
+
                         <div id="contactMapDetails">
 
                             <div id="contactDetails">
@@ -642,7 +717,7 @@
                                     ADDRESS
                                 </h6>
                                 <p>
-                                    Second Ave<br>Harlow<br>Essex<br>CM20 3DT
+                                    Second Ave, Harlow, Essex, CM20 3DT
                                 </p>
                                 
                             </div>
@@ -661,15 +736,26 @@
 
                             </div>
 
-                            <div id="contactMap">
-
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.104980005433!2d0.09701701600152847!3d51.76768797967878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8995ed7ee55cd%3A0x48fa8cbc350e736b!2sHarlow%20Leisurezone!5e0!3m2!1sen!2suk!4v1637088247723!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    
-                            </div>
-
                         </div>
 
+                        <form id="contactUs" method="get">
+
+                            <input id="name" name="name" type="text" placeholder="Your Name..." required>
+                            <input id="email" name="email" type="email" placeholder="Your E-Mail..." required><br>
+                            <input id="subject" name="subject" type="text" placeholder="Subject..." required>
+                            <textarea id="message" name="message" placeholder="Your message..." required></textarea><br>
+                            <input id="agree" name="agree" type="checkbox" required><p id="agreeText" class="smallPrint">I agree to my data being stored in accordance with your <a href="" class="black">Privacy Policy</a>.</p>
+                            <input id="submit" class="button1 italic" type="submit" value="SUBMIT">
+
+                        </form>
+
                     </article>
+
+                    <div id="contactMap">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.104980005433!2d0.09701701600152847!3d51.76768797967878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8995ed7ee55cd%3A0x48fa8cbc350e736b!2sHarlow%20Leisurezone!5e0!3m2!1sen!2suk!4v1637088247723!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
 
                 </div>
 
@@ -693,6 +779,8 @@
             </div>
 
         </footer>
+
+        <script src="resources/script/menu.js"></script>
 
     </body>
 </html>
