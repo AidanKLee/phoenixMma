@@ -46,3 +46,23 @@ const closeMenu = () => {
 menuOpnBtn.addEventListener('click', openMenu);
 
 menuClsBtn.addEventListener('click', closeMenu);
+
+menuOpnBtn.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openMenu();
+
+    }
+
+});
+
+menuClsBtn.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        closeMenu();
+
+    }
+
+});
